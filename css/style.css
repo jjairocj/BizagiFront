@@ -1,0 +1,16 @@
+header.pokeNav {
+    height: 50px;
+    background-color: #326BB2;
+    padding: 5px 10px;
+}
+
+header.pokeNav h1 {
+    font-size: 1.6em;
+    display: inline-block;
+    font-style: oblique;
+}
+
+div.user-icon img {
+    width: 50px;
+    border-radius: 50px;
+}
