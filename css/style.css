@@ -95,3 +95,8 @@ aside.active {
 .bread-cr {
     justify-content: left;
 }
+
+.small-text-p {
+    font-size: 0.8em;
+    text-align: justify;
+}

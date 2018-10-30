@@ -1,0 +1,42 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Inicio</a>
+        </li>
+        <li class="breadcrumb-item active">
+            <a>Libro</a>
+        </li>
+    </ol>
+</nav>
+<section class="container content">
+    <div class="row" id="book"></div>
+</section>
+
+<script id="templateBook" type="text/ractive">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>{{title}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{subtitle}} - {{authors}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <img alt="Thumbnail [100%x225]" src="{{imageLinks.thumbnail}}" data-holder-rendered="true" style="height: 225px;">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="small-text-p"> {{description}}</p>
+        </div>
+    </div>
+
+
+
+</script>

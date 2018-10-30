@@ -1,0 +1,23 @@
+{
+    "name": "bizagifront",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jjairocj/BizagiFront.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jjairocj/BizagiFront/issues"
+    },
+    "homepage": "https://github.com/jjairocj/BizagiFront#readme",
+    "devDependencies": {
+        "lite-server": "^2.4.0"
+    }
+}

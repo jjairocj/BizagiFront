@@ -11,30 +11,23 @@
 </div>
 
 <section class="container content">
-    <div class="row" id="pokemon"></div>
+    <div class="row" id="books"></div>
 </section>
 
 <script id="templateCards" type="text/ractive">
+
     {{#each items}}
-    <div class="row elements-left">
-        <div class="col-md-5">
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    {{volumeInfo.title}}
-                </div>
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{{volumeInfo.imageLinks.snallThumbnail}}" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                    <p class="card-text">{{volumeInfo.publisher}}</p>
-                    <p class="card-text">{{volumeInfo.publishedDate}}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <a class="btn btn-sm btn-outline-secondary" href="#/detail/{{id}}">View</a>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                </div>
+
+    <div class="card col-md-4">
+        <a class="btn btn-sm btn-outline-secondary" href="#/detail/{{id}}">
+            <img class="card-img-top" src="{{volumeInfo.imageLinks.smallThumbnail}}" style="width:200px" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{volumeInfo.title}}</h5>
+                <p class="card-text">{{volumeInfo.publisher}} - {{volumeInfo.publisherDate}}</p>
             </div>
-        </div>
+        </a>
     </div>
+
     {{/each}}
+
 </script>
