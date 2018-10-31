@@ -6,7 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "lite-server",
-        "server": "npx webpack-dev-server --open --config webpack.config.js"
+        "start": "npx webpack-dev-server --open --config webpack.dev.js",
+        "build": "npx webpack --config webpack.dev.js",
+        "watch": "npx webpack --config --watch webpack.dev.js"
     },
     "repository": {
         "type": "git",
@@ -27,7 +29,8 @@
         "style-loader": "^0.23.1",
         "webpack": "^4.23.1",
         "webpack-cli": "^3.1.2",
-        "webpack-dev-server": "^3.1.10"
+        "webpack-dev-server": "^3.1.10",
+        "webpack-merge": "^4.1.4"
     },
     "dependencies": {
         "jquery": "^3.3.1",
