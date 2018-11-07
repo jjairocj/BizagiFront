@@ -7,7 +7,7 @@ const webpack = require('webpack');
 module.exports = {
     entry: {
         app: [
-            "./src/assets/js/routes.js", "./src/assets/js/index.js"
+            "./src/assets/js/index.ts"
         ]
     },
     output: {
@@ -21,7 +21,16 @@ module.exports = {
                 'style-loader',
                 'css-loader'
             ]
+        }, {
+            test: /\.ts/,
+            use: [
+                'ts-loader'
+            ],
+            exclude: /node_modules/
         }]
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
     },
     plugins: [
         new cleanWebpackPlugin(['dist']),
